@@ -21,6 +21,3 @@ const App = () => {
 
 export default App;
 
-// gen 6 vs 6 
-// exodus 34 vs 14 
-// deut 28 vs 54 - 57
