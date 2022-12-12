@@ -8,6 +8,7 @@ import {
     StatusBar,
     ImageBackground,
     Image,
+    TouchableOpacity,
 } from 'react-native'
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
@@ -72,12 +73,15 @@ const DetailsScreen = ({ navigation, route }) => {
                     color: COLORS.white,
                     fontSize: 20,
                 }}>$100.00/PER DAY</Text>
-                <View style={styles.btn}>
-                    <Text style={{
-                        fontSize: 20,
-                        color: COLORS.primary,
-                    }}>Book now</Text>
-                </View>
+                <TouchableOpacity activeOpacity={0.8} onPress={() => {}}>
+
+                    <View style={styles.btn}>
+                        <Text style={{
+                            fontSize: 20,
+                            color: COLORS.primary,
+                        }}>Book now</Text>
+                    </View>
+                </TouchableOpacity>
             </View>
         </SafeAreaView>
     )
