@@ -106,7 +106,7 @@ const HomeScreen = ({ navigation }) => {
         <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.white }}>
             <StatusBar translucent={false} backgroundColor={COLORS.primary} />
             <View style={styles.header}>
-                <Icon name='sort' size={28} color={COLORS.white} />
+                <Icon name='arrow-back-ios' size={28} color={COLORS.white} onPress={() => navigation.navigate("OnBoardScreen")} />
                 <Icon name='notifications-none' size={28} color={COLORS.white} />
             </View>
             <ScrollView showsVerticalScrollIndicator={false}>
@@ -135,7 +135,7 @@ const HomeScreen = ({ navigation }) => {
                         renderItem={place => <Card place={place} />} />
                 </View>
                 <Text style={styles.sectionTitle}>Recommended</Text>
-                <View>
+                <View style={{paddingBottom: 10}}>
                     <FlatList
                         horizontal
                         snapToInterval={width - 30}
